@@ -5,9 +5,7 @@ from typing import List, Optional
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.orm import sessionmaker, declarative_base, Session
 
-# -------------------------------------------------
-# CONNECT TO LOCAL POSTGRESQL (NOT DOCKER DB)
-# -------------------------------------------------
+
 DATABASE_URL = "postgresql+psycopg2://postgres:postgres123@host.docker.internal:5432/demo"
 
 engine = create_engine(DATABASE_URL)
